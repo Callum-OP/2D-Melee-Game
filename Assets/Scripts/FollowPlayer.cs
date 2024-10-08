@@ -15,7 +15,11 @@ public class FollowPlayer : MonoBehaviour {
 		if(player == null)
 			return;
 
-        this.transform.position = new Vector3(player.transform.position.x, 2.2f, -10);
+        // If using with orthographic camera
+        // Sidescroller camera
+        // this.transform.position = new Vector3(player.transform.position.x, 2.2f, -10);
+        // Topdown camera
+        transform.position = player.transform.position + new Vector3(0, 1, -5);
     }
 }
 
