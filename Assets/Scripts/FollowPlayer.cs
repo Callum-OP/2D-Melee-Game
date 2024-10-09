@@ -8,6 +8,9 @@ public class FollowPlayer : MonoBehaviour {
     // This is the target the enemy is going to move towards
 	public Transform player;
 
+    // For choosing if orthographic camera scrolls sideways or not when following player
+    public bool Sidescroll;
+
     // Update is called once per frame
     void Update () {
         player = GameObject.FindWithTag("Player").GetComponent<Transform>();
@@ -15,11 +18,13 @@ public class FollowPlayer : MonoBehaviour {
 		if(player == null)
 			return;
 
-        // If using with orthographic camera
-        // Sidescroller camera
-        // this.transform.position = new Vector3(player.transform.position.x, 2.2f, -10);
-        // Topdown camera
-        transform.position = player.transform.position + new Vector3(0, 1, -5);
+        if(Sidescroll == true) {
+            // Sidescroller camera
+            this.transform.position = new Vector3(player.transform.position.x, 2.2f, -10);
+        } else {
+            // Topdown camera
+            this.transform.position = player.transform.position + new Vector3(0, 1, -5);
+        }
     }
 }
 

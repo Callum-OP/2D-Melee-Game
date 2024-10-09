@@ -121,8 +121,8 @@ public class TopDownUI : MonoBehaviour
             // Play hurt sound
             GetComponent<AudioSource>().clip = hurt;
             GetComponent<AudioSource>().Play();
-			// Run the SetHealthText() function
-			UserInterface.GetComponent<InGameUI>().SetHealthText();
+            // Run the SetHealthText() function
+            UserInterface.GetComponent<InGameUI>().SetHealthText();
             // Run Injured() coroutine
             StartCoroutine(Injured());
         }
