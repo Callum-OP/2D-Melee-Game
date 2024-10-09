@@ -5,13 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game/Scenes/Title.unity
     guid: a4d205cf375ca4440961b0baf73e7d72
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game/Scenes/World.unity
     guid: 0b888a7d1f6ae6144b24c3f0e3bd00cf
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game/Scenes/Death.unity
     guid: 764fc44182cbcc544af0112a639ebc6d
+  - enabled: 1
+    path: Assets/Game/Scenes/Title Scene.unity
+    guid: beaca4b154cfe5b4c80bdda609652bb8
+  - enabled: 1
+    path: Assets/Game/Scenes/Level 1.unity
+    guid: 23ef698ca9979c148b1c8817ed4310da
+  - enabled: 1
+    path: Assets/Game/Scenes/Horde Mode.unity
+    guid: 8dffa4cea92a9cd4dbda18c2d68557a6
   m_configObjects: {}
