@@ -17,11 +17,6 @@ public class MainMenu : MonoBehaviour
     {
     }
 
-    public void PlayCampaign()
-    {
-        SceneManager.LoadScene("Level 1");
-    }
-
     public void PlayHorde()
     {
         SceneManager.LoadScene("Horde Mode");

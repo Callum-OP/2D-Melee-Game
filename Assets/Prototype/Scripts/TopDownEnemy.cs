@@ -128,11 +128,11 @@ namespace Pathfinding {
             if (Vector2.Distance(transform.position, player.position) >= 50){
                 body2d.velocity = new Vector2(0, 0);
                 dazed = true;
-            }
+            //}
             
             // If player is not within range start moving between waypoints
-            else if (Vector2.Distance(transform.position, player.position) >= 15){
-                target = currentTarget;
+            // else if (Vector2.Distance(transform.position, player.position) >= 15){
+                // target = currentTarget;
             } else if (health > 0 && dazed == false) {
                 target = player.position;
             } else {

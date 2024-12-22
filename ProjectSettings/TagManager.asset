@@ -12,6 +12,7 @@ TagManager:
   - Gem
   - Entrance
   - Exit
+  - Spawner
   layers:
   - Default
   - TransparentFX
